@@ -1,0 +1,58 @@
+.main {
+    display: inline-block;
+    margin-right: 20px;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+    font-size: 15px;
+    position: relative;
+    text-shadow: none;
+    transition: text-shadow 250ms linear;
+}
+.tab {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    text-shadow: none;
+    transition: background-color 250ms linear;
+    width:100%;
+    color:black;
+    background-color: #e7e9e9;
+}
+.main:hover {
+    text-shadow: 0 0 10px white;
+}
+.tab:hover, .tab.active {
+    background-color: rgba(30, 150, 190, 0.01);
+    color: #1e96be;
+}
+.main div, .tab div {
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    top: 0;
+    background-color: black;
+    transition: background-color 250ms linear;
+}
+.tab div {
+    height:4px;
+    background-color: #e7e9e9;
+    top:auto;
+    bottom:0;
+}
+.main.green:hover div, .tab.green:hover div, .tab.active.green div {
+    background-color: #377037;
+}
+.main.yellow:hover div, .tab.yellow:hover div, .tab.active.yellow div {
+    background-color: yellow;
+}
+.main.red:hover div, .tab.red:hover div, .tab.active.red div {
+    background-color: red;
+}
+.main.blue:hover div, .tab.blue:hover div, .tab.active.blue div {
+    background-color: #1e96be;
+}
+

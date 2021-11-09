@@ -1,0 +1,47 @@
+.main {
+    height:40px;
+    width:250px;
+    line-height:40px;
+    cursor:pointer;
+    font-size: 15px;
+    position: relative;
+    text-shadow: none;
+    transition: text-shadow 250ms linear, background-color 250ms linear;
+}
+.main.left {
+    padding-left: 40px;
+}
+.main.right {
+    padding-right:40px;
+    text-align:right;
+    width:125px;
+}
+.main div {
+    position: absolute;
+    width: 8px;
+    height: 40px;
+    top: 0;
+    background-color: black;
+    transition: background-color 250ms linear;
+}
+.main.left div {
+    left:0;
+}
+.main.right div {
+    right:0;
+}
+.main:hover {
+    background-color: #2c323d;
+}
+.main.green:hover div {
+    background-color: #377037;
+}
+.main.yellow:hover div {
+    background-color: yellow;
+}
+.main.red:hover div {
+    background-color: red;
+}
+.main.blue:hover div {
+    background-color: #1e96be;
+}

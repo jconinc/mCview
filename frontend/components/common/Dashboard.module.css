@@ -1,0 +1,50 @@
+.outer {
+    height:100%;
+    display:inline-block;
+    width:calc(100% - 250px);
+    float:left;
+    padding:20px;
+}
+.quadrant {
+    display:inline-block;
+    float:left;
+    width:50%;
+    height:50%;
+}
+.quadrant > div {
+    background-color:white;
+    height:100%;
+}
+.quadrant:nth-child(1) {
+    padding:0 10px 10px 0;
+}
+.quadrant:nth-child(2) {
+    padding:0 0 10px 10px;
+}
+.quadrant:nth-child(3) {
+    padding:10px 10px 0 0;
+}
+.quadrant:nth-child(4) {
+    padding:10px 0 0 10px;
+}
+@media screen and (max-width:1338px) {
+    .outer {
+        height:100%;
+        display:block;
+        width:100%;
+        overflow-y: auto;
+    }
+    .quadrant {
+        display:block;
+        width:100%;
+    }
+    .quadrant:nth-child(1),
+    .quadrant:nth-child(2),
+    .quadrant:nth-child(3)
+    {
+        padding:0 0 10px 0;
+    }
+    .quadrant:nth-child(4) {
+        padding:0;
+    }
+}

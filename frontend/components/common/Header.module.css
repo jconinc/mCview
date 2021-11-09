@@ -1,0 +1,99 @@
+.header {
+    position: absolute;
+    top:0;
+    height:60px;
+    background-color: black;
+    width:100%;
+    color:white;
+    z-index: 1;
+}
+.inner {
+    position: relative;
+}
+.imgContainer {
+    position: absolute;
+    top:0;
+    left:0;
+    height: 60px;
+    width:250px;
+    padding:4px;
+}
+.imgContainer div {
+    height:100%;
+}
+.imgContainer img {
+    width:100%;
+    object-fit:cover;
+    cursor:pointer;
+}
+.menuOptionsContainer {
+    text-align:center;
+    height:100%;
+}
+.menuDropOptionsControl {
+    display:none;
+    float:left;
+    height:100%;
+    line-height:60px;
+    margin-left:20px;
+    cursor:pointer;
+    font-size:1.5rem;
+}
+.menuDropOptionsContainer {
+    position:absolute;
+    top:60px;
+    left:0;
+    background-color:black;
+}
+
+.menuButtonContainer {
+    position: absolute;
+    top:0;
+    right:0;
+    height: 60px;
+    cursor:pointer;
+    width:250px;
+    line-height:60px;
+    text-align:right;
+}
+.menuDropButtonControl {
+    display:none;
+    float:right;
+    height:100%;
+    line-height:60px;
+    margin-right:20px;
+    cursor:pointer;
+    font-size:1.5rem;
+}
+.menuDropButtonContainer {
+    position:absolute;
+    top:60px;
+    right:0;
+    background-color:black;
+}
+
+@media screen and (max-width:1338px) {
+    .imgContainer {
+        right:0;
+        left:0;
+        margin:auto;
+    }
+    .menuOptionsContainer {
+        display:none;
+    }
+    .menuDropOptionsControl {
+        display:inline;
+    }
+}
+@media screen and (max-width: 769px) {
+    .menuButtonContainer {
+        display:none;
+    }
+    .menuDropButtonControl {
+        display:inline;
+    }
+    .menuDropButtonContainer {
+        display:inline;
+    }
+}
+

@@ -1,0 +1,28 @@
+.modal {
+    background-color:#f1f1f1;
+    border-radius:0;
+}
+.titleRow {
+    width:100%;
+}
+.titleRow > div {
+    display:inline-block;
+    float:left;
+    height:60px;
+}
+.titleRow > div:first-child {
+    width:60px;
+}
+.titleRow > div:last-child {
+    width: calc(100% - 60px);
+}
+.title {
+    line-height:60px;
+    margin-bottom: 0 !important;
+    text-align:center;
+}
+.close {
+    position: absolute;
+    top:.5rem;
+    right:.5rem;
+}

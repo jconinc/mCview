@@ -1,0 +1,51 @@
+.outer {
+    display:inline-block;
+    float:left;
+    height:100%;
+    width:250px;
+    background-color: #1b1e24;
+}
+.title {
+    height:60px;
+    color:white;
+    padding-left: 12px;
+}
+.innerTitle {
+    line-height: 30px;
+}
+.meta {
+    display:none;
+}
+@media screen and (max-width:1338px) {
+    .title {
+        display:none;
+    }
+    .outer {
+        display: block;
+        position: absolute;
+        top: 60px;
+        height: 60px;
+        width: 100%;
+    }
+    .outer.loggedIn {
+        top: 120px;
+    }
+    .meta {
+        display: block;
+        position: absolute;
+        top: 60px;
+        height: 60px;
+        width: 100%;
+        background-color: #1b1e24;
+        color:white;
+        line-height:60px;
+        padding-left:20px;
+    }
+}
+
+.leftFiller {
+    display: flex;
+    flex-flow: column;
+    height:100%;
+    flex: 0 1 40px;
+}

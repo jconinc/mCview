@@ -1,0 +1,36 @@
+.lmo {
+    height:60px;
+    line-height:60px;
+    padding-left:12px;
+    color: #8b91a0;
+    cursor:pointer;
+    font-size:14px;
+}
+.lmo:hover, .lmo.active {
+    background-color: #2c323d;
+    color:white;
+}
+.icon {
+    margin-right:12px;
+    font-size:16px;
+}
+@media screen and (max-width:1338px) {
+    .lmo {
+        display:inline-block;
+        float:left;
+    }
+    .lmo.three {
+        min-width:calc(100%/3);
+    }
+    .lmo.five {
+        min-width:20%;
+    }
+}
+@media screen and (max-width: 769px) {
+    .verbiage {
+        display:none;
+    }
+    .lmo {
+        text-align:center;
+    }
+}

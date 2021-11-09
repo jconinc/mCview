@@ -1,0 +1,132 @@
+.button {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 14px 4px;
+    text-decoration: none;
+    max-height: 44px;
+    border: none;
+    width:100%;
+    cursor:pointer;
+}
+
+.button:focus {
+    outline:none;
+}
+
+.button.small {
+    padding: 5px 3px;
+    width:auto;
+}
+
+.actionRight span:last-child {
+    margin-left: 5px;
+    transition: all 1s
+}
+
+.actionLeft span:first-child {
+    margin-right: 5px;
+    transition: all 1s
+}
+
+.actionRight:hover span:last-child {
+    margin-left: 15px
+}
+
+.actionLeft:hover span:first-child {
+    margin-right: 15px
+}
+
+.actionRight span:first-child {
+    margin-left: 5px;
+    transition: all 1s
+}
+
+.actionLeft span:last-child {
+    margin-right: 5px;
+    transition: all 1s
+}
+
+.actionRight:hover span:first-child {
+    margin-left: 15px
+}
+
+.actionLeft:hover span:last-child {
+    margin-right: 15px
+}
+
+.button.green {
+    background-color: #377037
+}
+
+.button.green:hover {
+    background-color: #306130
+}
+
+.button.red {
+    background-color: #f35958
+}
+
+.button.cancel {
+    height: 44px;
+    width: 44px;
+    border-radius: 22px;
+    background-color: rgba(255, 0, 0, .25);
+    text-align: center;
+    color: #fff;
+    display: inline;
+    float: left;
+    border: 2px solid #e94847;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.button.menu {
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    margin-right:10px;
+    width:100px;
+}
+
+.button.append {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    height: 34px;
+    line-height: 34px;
+    padding: 0;
+    width: 100px;
+}
+
+.button.cancel:hover {
+    background-color: #e94847;
+}
+
+.button.red:hover {
+    background-color: #e94847;
+}
+
+.button.closeModal {
+    font-size: 1.5em;
+    color:black;
+    width:auto;
+    background-color:transparent;
+    padding:0;
+    float: right;
+    opacity:.5;
+}
+
+.button.closeModal:hover {
+    opacity:1;
+}
+
+.button.blue {
+    background-color: #1e96be
+}
+
+.button.blue:hover {
+    background-color: #1c8bb0
+}

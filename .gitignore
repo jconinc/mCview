@@ -1,0 +1,25 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NODE STUFF ###
+frontend/node_modules
+frontend/dist/bundle.js
+
+### PROJECT SPECIFIC ###
+src/main/resources/static/*
+src/main/resources/templates/*.html
+frontend/public/__ENV.js
